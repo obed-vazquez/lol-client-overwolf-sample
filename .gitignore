@@ -91,3 +91,7 @@ Thumbs.db
 # NodeJS #
 ##########
 /node_modules/
+/releases/
+releases/
+\releases\
+releases\

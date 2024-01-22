@@ -58,7 +58,7 @@ class BackgroundController {
   }
 
   private async onAppLaunchTriggered(e: AppLaunchTriggeredEvent) {
-    console.log('onAppLaunchTriggered():', e);
+    console.info('onAppLaunchTriggered(): AppLaunchTriggeredEvent:', e);
 
     if (!e || e.origin.includes('gamelaunchevent')) {
       return;
@@ -74,6 +74,7 @@ class BackgroundController {
   }
 
   private toggleWindows(info: RunningGameInfo) {
+    console.info("toggleWindows(): info: ", info);
     if (!info || !this.isSupportedGame(info)) {
       return;
     }
@@ -89,12 +90,13 @@ class BackgroundController {
 
   private async isSupportedGameRunning(): Promise<boolean> {
     const info = await OWGames.getRunningGameInfo();
-
+    
     return info && info.isRunning && this.isSupportedGame(info);
   }
 
   // Identify whether the RunningGameInfo object we have references a supported game
   private isSupportedGame(info: RunningGameInfo) {
+    console.info("isSupportedGame(): info: ", info);
     return kGameClassIds.includes(info.classId);
   }
 }
