@@ -49,7 +49,7 @@ After that, import the `/dist` folder into Overwolf as an unpacked application a
 
 <table>
 <thead><tr><th><b>Role</b></th> <th><b>Contact</b></th></tr></thead>
-<tr><td>Owner/admin</td><td>current main developer: <a href='mailto:obed.vazquez+overwolf@gmail.com'>obed.vazquez@gmail.com</a></td></tr>
+<tr><td>Owner/admin</td><td>current main developer: <a href='mailto:obed.vazquez+overwolf@gmail.com'>obed.vazquez+overwolf@gmail.com</a></td></tr>
 <tr><td>Supporters</td><td>we have supporters with knowledge on the setup process of the project only</td></tr>
 <tr><td>Community</td><td> send us a message in <a href='http://discord.whiteweb.tech'> our Discord Server</a></td></tr>
 </table>
